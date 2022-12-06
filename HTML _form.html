@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Document</title>
+
+    <style>
+
+      body{background-image: url("Nature(1)");}
+
+      h4{ text-align:center;
+        color: orange;
+          font-size:30px}
+
+      form{border:4px solid orange;margin:99px;}
+
+      input{ width:500px; text-align: left; font-weight: bold;}
+      button{background-color: orange; width: 500px; font-weight: bolder;}
+
+    </style>
+
+</head>
+
+<body>
+
+    <img src="C:\Users\ABHISHEK\Pictures.jpg;">
+
+    <form action="#" onsubmit="ongetcall(event)">
+
+        <fieldset>
+
+            <h4>Book a call</h4>
+            <p>Book a call slot and our representative will call you within 1hr of selected time.</p><hr>
+
+<label for="name">Name:</label>
+
+<input type="text" id="name" name="name" required><br><br>
+
+<label for="mail">Email:</label>
+
+<input type="email" id="mail" name="mail"required><br><br>
+
+<label for="telp">Phone:</label>
+
+<input type="tel" id="telp" name="telp" required><br><br>
+
+<label for="time">Time for call:</label>
+
+<input type="datetime-local" id="time" name="time" required><br><br>
+
+<button>GET A CALL</button>
+
+</fieldset>
+
+    </form>
+
+    
+
+    <script>
+
+        function ongetcall(event)
+
+        {
+
+            event.preventDefault();
+
+            console.log(event.target.name.value)
+
+            console.log(event.target.email.value)
+
+            console.log(event.target.tel.value)
+
+            console.log(event.target.time.value)
+
+        }
+
+    </script>
+
+</body>
+
+</html>
